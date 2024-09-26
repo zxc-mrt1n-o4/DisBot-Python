@@ -39,11 +39,11 @@ async def on_ready():
 ############################################################################################################################################
 
 # NewsAPI Key (replace with your actual key)
-NEWS_API_KEY = '5d9ae2f2dd0f4ca8878aa1016394cf74'
+NEWS_API_KEY = ''
 NEWS_URL = f"https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=5d9ae2f2dd0f4ca8878aa1016394cf74"
 
 # Weather API Key (replace with your actual key)
-WEATHER_API_KEY = 'e3c285b68a764ab0a4103258242609'
+WEATHER_API_KEY = ''
 WEATHER_URL = f"http://api.weatherapi.com/v1/current.json?key={WEATHER_API_KEY}&q=Charlotte&lang=ru"
 
 # List of Russian anecdotes
@@ -347,8 +347,8 @@ async def top10_error(ctx, error):
         await ctx.send("You don't have permission to use this command. Only admins can use it.")
 
 # Spotify API credentials (replace with your own from the Spotify Developer Dashboard)
-SPOTIPY_CLIENT_ID = 'a56263f234cb49e6986942c859740220'
-SPOTIPY_CLIENT_SECRET = '4d532da3bf6b46bfb17956a810e83172'
+SPOTIPY_CLIENT_ID = ''
+SPOTIPY_CLIENT_SECRET = ''
 
 # Set up Spotify API authorization
 spotify_auth = SpotifyClientCredentials(client_id=SPOTIPY_CLIENT_ID, client_secret=SPOTIPY_CLIENT_SECRET)
@@ -376,7 +376,7 @@ def get_top_10_tracks():
 scheduler = AsyncIOScheduler()
 
 # Channel ID for top 10
-TARGET_CHANNEL_ID = '1256433863832502363'  # Replace with the channel ID where you want the message to be sent
+TARGET_CHANNEL_ID = ''  # Replace with the channel ID where you want the message to be sent
 
 async def send_top_10_daily():
     """Send the top 10 tracks to the specified channel every day at 12 AM."""
@@ -659,7 +659,14 @@ async def unmute_after_delay(guild, member, delay):
 ############################################################################################################################################
 
 # Run the bot
-bot.run('MTI4MjAyNzg0NTYyMjY5NDAxOA.GcD_27.GW2-eaDH5S1be2BygxiOvpy0QnabqiBXrNX8c8')
+bot.run('')
+
+
+
+
+
+
+
 
 
 #700 LINES OF CODE ||| MRT1N 
